@@ -5,6 +5,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 header {
@@ -28,7 +29,7 @@ main h1 {
     font-weight: bold;
 }
 
- main h2 {
+main h2 {
     font-weight: 300;
 }
 
@@ -74,4 +75,16 @@ main h1 {
 
 .btn-marg-1_2 {
     margin: 1.2em;
+}
+
+.normal-font {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.padd-r-5 {
+    padding-right: 5px;
+}
+
+.marg-bot-50 {
+    margin-bottom: 50px;
 }

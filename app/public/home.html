@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- jQuery script-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    
+
     <!-- Font Awesome script-->
     <script src="https://kit.fontawesome.com/8694d86a7c.js"></script>
 
-    <!-- Reset stylesheet -->
-    <link rel="stylesheet" href="css/reset.css">
+    <!-- Reset stylesheet
+    <link rel="stylesheet" href="css/reset.css"> -->
     
     <!-- Google Icon Fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="javascript/sidebar.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -29,18 +31,46 @@
 </head>
 <body>
     <header>
-        <nav class="light-blue darken-4 zindex-100">
-            <div class="nav-wrapper light-blue darken-4">
-                <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
-                <a href="/" class="brand-logo" id="logo">Friend Finder</a>
-                <ul class="right hide-on-med-and-down" id="head-nav-links">
-                    <li><a href="/survey">Survey</a></li>
-                    <li><a href="/api/friends">API Friends List</a></li>
-                    <li><a href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+        <nav class="nav-extended light-blue darken-4">
+            <div class="nav-wrapper light-blue darken-4 ">
+                <i class="fa fa-address-book-o fa-4x" style="padding-right: 0px;" aria-hidden="true" id=logo-icon><a href="/" class="brand-logo normal-font">Friend Finder</a></i>  
+                
+
+                <ul class="right hide-on-med-and-down" >
+                    <li><a class="btn-marg-1_2" href="/survey">Survey</a></li>
+                    <li><a class="btn-marg-1_2" href="/api/friends">API Friends List</a></li>
+                    <li><a class="btn-marg-1_2" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
                 </ul>
+                                
+                <ul id="mobile-demo" class="sidenav white-text red" >
+                    <li><a class="white-text" href="/survey">Survey</a></li>
+                    <li><a class="white-text" href="/api/friends">API Friends List</a></li>
+                    <li><a class="white-text" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
+                </ul>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text btn-marg-1_2">menu</i></a>
             </div>
-        </nav>
+        </nav>    
     </header>
+
+    <!-- <header>
+        <div class="nav-wrapper light-blue darken-4 ">
+            <i class="fa fa-address-book-o fa-5x white-text" style="padding-right: 10px;" aria-hidden="true" id=logo-icon></i>  
+            <a href="/" class="brand-logo white-text" style="line-height: 3em;">  Friend Finder</a>
+
+            <ul class="right hide-on-med-and-down" >
+                <li><a class="btn-marg-1_2" href="/survey">Survey</a></li>
+                <li><a class="btn-marg-1_2" href="/api/friends">API Friends List</a></li>
+                <li><a class="btn-marg-1_2" href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+            </ul>
+                                
+            <ul id="mobile-demo" class="sidenav white-text light-blue darken-3" >
+                <li><a class="white-text" href="/survey">Survey</a></li>
+                <li><a class="white-text" href="/api/friends">API Friends List</a></li>
+                <li><a class="white-text" href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+            </ul>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text btn-marg-1_2">menu</i></a>
+        </div>
+    </header> -->
         
     <main>
         <div class="container">
@@ -73,14 +103,14 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container center-align">
-                <a class="grey-text text-lighten-4 center-align" href="https://jdb443.github.io">Portfolio Website</a> <br> <br>
+                <a class="grey-text text-lighten-4 center-align" href="https://jdb443.github.io" target="_blank">Portfolio Website</a> <br> <br>
                 &#xa9; 2019 Jonathan Behar <br>
                 
             </div>

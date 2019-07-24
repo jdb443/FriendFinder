@@ -24,54 +24,32 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+    <script src="javascript/sidebar.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Friend Finder Survey</title>
 </head>
 <body>
     <header>
-        <!-- <div class="navbar-fixed"> -->
         <nav class="nav-extended light-blue darken-4">
             <div class="nav-wrapper light-blue darken-4 ">
-                <i class="fa fa-address-book-o fa-5x" style="padding-right: 10px;" aria-hidden="true" id=logo-icon></i>  
-                <a href="/" class="brand-logo" style="line-height: 3em;">  Friend Finder</a>
-
-                <ul id="nav-mobile" class="right hide-on-med-and-down" >
-                    <li ><a class="btn-marg-1_2" href="/survey">Survey</a></li>
-                    <li ><a class="btn-marg-1_2" href="/api/friends">API Friends List</a></li>
-                    <li ><a class="btn-marg-1_2" href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+                <i class="fa fa-address-book-o fa-4x padd-r-5" aria-hidden="true" id=logo-icon><a href="/" class="brand-logo normal-font">Friend Finder</a></i>  
+                
+                <ul class="right hide-on-med-and-down" >
+                    <li><a class="btn-marg-1_2" href="/survey">Survey</a></li>
+                    <li><a class="btn-marg-1_2" href="/api/friends">API Friends List</a></li>
+                    <li><a class="btn-marg-1_2" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
                 </ul>
                                 
-                <ul id="nav-mobile" class="sidenav" >
-                    <li><a href="/survey">Survey</a></li>
-                    <li><a href="/api/friends">API Friends List</a></li>
-                    <li><a href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
+                <ul id="mobile-demo" class="sidenav white-text red" >
+                    <li><a class="white-text" href="/survey">Survey</a></li>
+                    <li><a class="white-text" href="/api/friends">API Friends List</a></li>
+                    <li><a class="white-text" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
                 </ul>
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons white-text btn-marg-1_2">menu</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons white-text btn-marg-1_2">menu</i></a>
             </div>
-            <!-- <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#test1">Test 1</a></li>
-                    <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-                    <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-                    <li class="tab"><a href="#test4">Test 4</a></li>
-                </ul>
-            </div> -->
-
-        </nav>
-
-        <!-- <nav class="light-blue darken-4">
-            <div class="nav-wrapper light-blue darken-4">
-                <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
-                <a href="/" class="brand-logo" id="logo">Friend Finder</a>
-                <ul class="right hide-on-med-and-down" id="head-nav-links">
-                    <li><a href="/survey">Survey</a></li>
-                    <li><a href="/api/friends">API Friends List</a></li>
-                    <li><a href="https://github.com/jdb443/FriendFinder">GitHub Repo</a></li>
-                </ul>
-            </div>
-        </nav> -->
-    <!-- </div> -->
+        </nav>    
     </header>
 
     <main>
@@ -226,8 +204,8 @@
                         </div>
 
                         <!-- Survey Submit Button -->
-                        <div style ="margin-bottom: 50px">
-                            <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
+                        <div class="marg-bot-50">
+                            <button class="btn waves-effect waves-light green darken-4" type="submit" name="action" id="submitButton">Submit Responses
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -237,6 +215,30 @@
         </div>
     </main>
     
+    <footer class="page-footer light-blue darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Friend Finder App</h5>
+                    <p class="grey-text text-lighten-4">Thank you for taking the brief survey. Your responses will be used for education & training purposes only!</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/jdb443/FriendFinder" target="_blank">GitHub Repo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                <a class="grey-text text-lighten-4 center-align" href="https://jdb443.github.io" target="_blank">Portfolio Website</a> <br> <br>
+                &#xa9; 2019 Jonathan Behar <br>
+                
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
