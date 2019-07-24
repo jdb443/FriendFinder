@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Friend Finder App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdb443/FriendFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdb443/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/jdb443/FriendFinder#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "mysql": "^2.17.1"
+  }
+}
