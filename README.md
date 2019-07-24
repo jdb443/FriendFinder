@@ -10,7 +10,7 @@ Friend Finder App
 ## Demo
 <img src="app/public/images/FriendFinder_Home.png">
 	
-**Friend Finder** is deployed to Heroku. Please check it out [here]( target="_blank").
+**Friend Finder** is deployed to Heroku. Please check it out [here](https://frozen-falls-90449.herokuapp.com/ target="_blank").
 
 ## Installation
 
