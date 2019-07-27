@@ -240,5 +240,62 @@
         </div>
     </footer>
 
+    <!-- Modal Displaying Closest Friend Matches -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Closest Friend Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+
+      			$('#modal1').modal('open');
+      		});
+		});
+	</script>
+
 </body>
 </html>
