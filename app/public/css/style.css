@@ -88,3 +88,187 @@ main h2 {
 .marg-bot-50 {
     margin-bottom: 50px;
 }
+
+.dropdown-content li > span {
+    font-size: 16px;
+    color: #01579b;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+
+.select-wrapper input.select-dropdown {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 3rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    z-index: 1;
+    color: #01579b;
+  }
+
+  .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #01579b;
+}
+
+  /* Validation Sass Placeholders */
+  input.valid:not([type]), input.valid:not([type]):focus,
+  input[type=text].valid:not(.browser-default),
+  input[type=text].valid:not(.browser-default):focus,
+  input[type=password].valid:not(.browser-default),
+  input[type=password].valid:not(.browser-default):focus,
+  input[type=email].valid:not(.browser-default),
+  input[type=email].valid:not(.browser-default):focus,
+  input[type=url].valid:not(.browser-default),
+  input[type=url].valid:not(.browser-default):focus,
+  input[type=time].valid:not(.browser-default),
+  input[type=time].valid:not(.browser-default):focus,
+  input[type=date].valid:not(.browser-default),
+  input[type=date].valid:not(.browser-default):focus,
+  input[type=datetime].valid:not(.browser-default),
+  input[type=datetime].valid:not(.browser-default):focus,
+  input[type=datetime-local].valid:not(.browser-default),
+  input[type=datetime-local].valid:not(.browser-default):focus,
+  input[type=tel].valid:not(.browser-default),
+  input[type=tel].valid:not(.browser-default):focus,
+  input[type=number].valid:not(.browser-default),
+  input[type=number].valid:not(.browser-default):focus,
+  input[type=search].valid:not(.browser-default),
+  input[type=search].valid:not(.browser-default):focus,
+  textarea.materialize-textarea.valid,
+  textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+    border-bottom: 1px solid #01579b;
+    -webkit-box-shadow: 0 1px 0 0 #01579b;
+            box-shadow: 0 1px 0 0 #01579b;
+  }
+
+    /* Validation Sass Placeholders */
+    input.valid:not([type]), input.valid:not([type]):active,
+    input[type=text].valid:not(.browser-default),
+    input[type=text].valid:not(.browser-default):active,
+    input[type=password].valid:not(.browser-default),
+    input[type=password].valid:not(.browser-default):active,
+    input[type=email].valid:not(.browser-default),
+    input[type=email].valid:not(.browser-default):active,
+    input[type=url].valid:not(.browser-default),
+    input[type=url].valid:not(.browser-default):active,
+    input[type=time].valid:not(.browser-default),
+    input[type=time].valid:not(.browser-default):active,
+    input[type=date].valid:not(.browser-default),
+    input[type=date].valid:not(.browser-default):active,
+    input[type=datetime].valid:not(.browser-default),
+    input[type=datetime].valid:not(.browser-default):active,
+    input[type=datetime-local].valid:not(.browser-default),
+    input[type=datetime-local].valid:not(.browser-default):active,
+    input[type=tel].valid:not(.browser-default),
+    input[type=tel].valid:not(.browser-default):active,
+    input[type=number].valid:not(.browser-default),
+    input[type=number].valid:not(.browser-default):active,
+    input[type=search].valid:not(.browser-default),
+    input[type=search].valid:not(.browser-default):active,
+    textarea.materialize-textarea.valid,
+    textarea.materialize-textarea.valid:active, .select-wrapper.valid > input.select-dropdown {
+      border-bottom: 1px solid #01579b;
+      -webkit-box-shadow: 0 1px 0 0 #01579b;
+              box-shadow: 0 1px 0 0 #01579b;
+    }
+
+    input.valid:not([type]), input.valid:not([type]):hover,
+    input[type=text].valid:not(.browser-default),
+    input[type=text].valid:not(.browser-default):hover,
+    input[type=password].valid:not(.browser-default),
+    input[type=password].valid:not(.browser-default):hover,
+    input[type=email].valid:not(.browser-default),
+    input[type=email].valid:not(.browser-default):hover,
+    input[type=url].valid:not(.browser-default),
+    input[type=url].valid:not(.browser-default):hover,
+    input[type=time].valid:not(.browser-default),
+    input[type=time].valid:not(.browser-default):hover,
+    input[type=date].valid:not(.browser-default),
+    input[type=date].valid:not(.browser-default):hover,
+    input[type=datetime].valid:not(.browser-default),
+    input[type=datetime].valid:not(.browser-default):hover,
+    input[type=datetime-local].valid:not(.browser-default),
+    input[type=datetime-local].valid:not(.browser-default):hover,
+    input[type=tel].valid:not(.browser-default),
+    input[type=tel].valid:not(.browser-default):hover,
+    input[type=number].valid:not(.browser-default),
+    input[type=number].valid:not(.browser-default):hover,
+    input[type=search].valid:not(.browser-default),
+    input[type=search].valid:not(.browser-default):hover,
+    textarea.materialize-textarea.valid,
+    textarea.materialize-textarea.valid:hover, .select-wrapper.valid > input.select-dropdown {
+      border-bottom: 1px solid #01579b;
+      -webkit-box-shadow: 0 1px 0 0 #01579b;
+              box-shadow: 0 1px 0 0 #01579b;
+    }
+
+    /* Text inputs
+    input:not([type]),
+    input[type=text]:not(.browser-default),
+    input[type=password]:not(.browser-default),
+    input[type=email]:not(.browser-default),
+    input[type=url]:not(.browser-default),
+    input[type=time]:not(.browser-default),
+    input[type=date]:not(.browser-default),
+    input[type=datetime]:not(.browser-default),
+    input[type=datetime-local]:not(.browser-default),
+    input[type=tel]:not(.browser-default),
+    input[type=number]:not(.browser-default),
+    input[type=search]:not(.browser-default),
+    textarea.materialize-textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #9e9e9e;
+      border-radius: 0;
+      outline: none;
+      height: 3rem;
+      width: 100%;
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      padding: 0;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      -webkit-transition: border .3s, -webkit-box-shadow .3s;
+      transition: border .3s, -webkit-box-shadow .3s;
+      transition: box-shadow .3s, border .3s;
+      transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+    } */
+
+    /* .modal {
+        display: none;
+        vertical-align: middle;
+        position: relative;
+        z-index: 2;
+        max-width: 550px;
+        box-sizing: border-box;
+        width: 60%;
+        background: #fff;
+        padding: 15px 30px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -o-border-radius: 8px;
+        -ms-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 10px #000;
+        -moz-box-shadow: 0 0 10px #000;
+        -o-box-shadow: 0 0 10px #000;
+        -ms-box-shadow: 0 0 10px #000;
+        box-shadow: 0 0 10px #000;
+        text-align: left;
+        top: 10%;
+    } */

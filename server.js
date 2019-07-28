@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 var app = express();
-var PORT = process.env.PORT;
+var PORT = process.env.PORT || 3030;
 
 app.use(express.static(path.join(__dirname, './app/public')));
 
